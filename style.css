@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background: #1a4156;
+}
+
+nav .wrapper {
+  position: relative;
+  max-width: 1300px;
+  padding: 0px 30px;
+  height: 70px;
+  line-height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .logo a {
+  color: #6fda44;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.wrapper .nav-links {
+  display: inline-flex;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 9px 30px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.wrapper .btn {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.wrapper .btn.close-btn {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+.menubtnn,
+.closebtnn {
+  display: none;
+}
+.box,
+.boxx {
+  width: 300px;
+  height: 40px;
+  background-color: #2b5468;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.searchicon {
+  font-size: 16px;
+  color: white;
+  margin-right: 8px;
+}
+
+.searchinput {
+  flex: 1;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding-left: 10px;
+  background-color: #2b5468;
+  color: white;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+.new {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 1px 15px;
+  border-radius: 15px;
+  background-color: #0073d2;
+}
+/* .bottom {
+  position: absolute;
+  top: 85%;
+  left: 75%;
+  color: white;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+} */
+
+/*Navbar styling ends */
+
+
+.custom-section {
+  width: inherit;
+  padding: 40px 0;
+}
+
+.custom-section .col-lg-5 h2 {
+  margin-bottom: 0;
+  line-height: 1;
+  white-space: nowrap;
+  color: #6fda44;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.custom-section .col-lg-5 h3 {
+  margin-top: 15px;
+  color: white;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.custom-section .col-lg-5 p {
+  color: white;
+  font-size: 20px;
+  margin-top: 30px;
+  line-height: 1.7em;
+}
+.detail1 sup,
+.detail2 sup {
+  font-size: 16px;
+  vertical-align: super;
+}
+
+.buttons {
+  display: inline-block;
+  margin-bottom: 71px;
+}
+.custom-section .col-lg-5 .startedbtn {
+  display: inline-block;
+  padding: 8px 22px;
+  color: white;
+  background-color: #37a000;
+  border: 1px solid transparent;
+  margin-top: 60px;
+  text-decoration: none;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  border-radius: 8px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.custom-section .col-lg-5 .demobtn {
+  display: inline-block;
+  padding: 8px 22px;
+  color: #37a000;
+  background-color: white;
+  border: 1px solid transparent;
+  margin-top: 60px;
+  text-decoration: none;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  border-radius: 8px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+.custom-section .col-lg-7 img {
+  width: 100%;
+  position: absolute;
+  top: -14rem;
+  right: -11%;
+}
+
+/*For responsiveness */
+@media screen and (max-width: 1500px) and (min-width: 486px) {
+  .boxx {
+    display: none;
+  }
+}
+@media screen and (max-width: 1126px) {
+  .box {
+    width: 250px;
+  }
+  .searchinput {
+    height: 20px;
+    width: 100px;
+    font-size: 14px;
+    padding-left: 5px;
+  }
+  .nav-links li a {
+    font-size: 14px;
+    padding: 9px 22px;
+  }
+  .detail1 sup,
+  .detail2 sup {
+    font-size: 16px;
+  }
+  .buttons {
+    margin-bottom: 15px;
+  }
+  /* .bottom {
+    left: 72%;
+  } */
+}
+@media screen and (max-width: 1085px) {
+  .custom-section .col-lg-5 h3 {
+    font-size: 36px;
+  }
+  .custom-section .col-lg-5 p {
+  font-size: 18px;
+  margin-top: 30px;
+  line-height: 1.5em;
+}
+  
+}
+@media screen and (max-width: 1076px) {
+  .box {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .wrapper .btn {
+    display: block;
+  }
+  .wrapper .nav-links {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    top: 0;
+    left: -100%;
+    background: #1a4156;
+    display: block;
+    padding: 50px 10px;
+    line-height: 50px;
+    overflow-y: auto;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+    transition: all 0.3s ease;
+  }
+  /* custom scroll bar */
+   ::-webkit-scrollbar {
+    width: 10px;
+  }
+   ::-webkit-scrollbar-track {
+    background: #1a4156;
+  }
+   ::-webkit-scrollbar-thumb {
+    background: #3A3B3C;
+  }
+  #menu-btn:checked~.nav-links {
+    left: 0%;
+  }
+  #menu-btn:checked~.btn.menu-btn,
+  .bottom {
+    display: none;
+  }
+  #close-btn:checked~.btn.menu-btn {
+    display: block;
+  }
+  .nav-links li {
+    margin: 15px 10px;
+  }
+  .nav-links li a {
+    padding: 0 20px;
+    display: block;
+    font-size: 20px;
+  }
+  .box {
+    width: 350px;
+  }
+  .custom-section .col-lg-5 h2 {
+    font-size: 36px;
+  }
+  .custom-section .col-lg-5 h3 {
+    font-size: 36px;
+  }
+  .custom-section .col-lg-5 {
+    text-align: center
+  }
+  .container {
+    margin-top: -10px;
+  }
+  .buttons {
+  margin-bottom: 20px;
+}
+}
+@media screen and (max-width: 1021px) {
+  .custom-section .col-lg-7 img {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .custom-section {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .box {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 485px) {
+  .box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    margin-top: -50px;
+  }
+  .custom-section .col-lg-5 {
+    margin-top: 20px;
+  }
+  .detail3 {
+    font-size: 18px;
+  }
+  .wrapper .logo a {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .custom-section .col-lg-5 {
+    margin-top: 20px;
+  }
+  .custom-section .col-lg-5 h2 {
+    font-size: 32px;
+  }
+  .custom-section .col-lg-5 h3 {
+    font-size: 32px;
+  }
+}
